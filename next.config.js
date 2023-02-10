@@ -7,7 +7,6 @@ module.exports = withImages({
     domains: [config.CONTENTFUL_ASSET_DOMAIN],
     loader: 'akamai',
   },
-  distDir: 'build',
   async redirects() {
     return [
       {
