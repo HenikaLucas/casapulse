@@ -1,6 +1,6 @@
 const withImages = require('next-images');
 var config = require('./config');
-import pages from './pages';
+const pages = require('./pages');
 
 module.exports = withImages({
   images: {
