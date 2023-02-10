@@ -1,0 +1,27 @@
+.listItem {
+    color: $cp-bianca;
+    width: fit-content;
+
+    &__dark{
+        color: $cp-firefly;
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        margin: 19px 0;
+    }
+
+    &__image {
+        padding-top: 5px;
+    }
+    
+    &__text {
+        margin-left: 19px;
+        font-size: 16px;
+    }
+}
+
+ul ul .listItem__image {
+    display: none;
+}

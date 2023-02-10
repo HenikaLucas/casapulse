@@ -1,0 +1,51 @@
+.footer-section {
+  background-color: #fff;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  &__container {
+    background-color: #fff;
+    max-width: 1366px;
+    padding-left: 139px;
+    padding-right: 139px;
+    .image-container {
+      margin-bottom: 75px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        @include breakpoint(mobile) {
+          width: 100%;
+        }
+      }
+      &-break{
+        margin-bottom: 20px;
+      }
+    }
+    .caption-container {
+      .text {
+        text-align: center;
+        font-family: $sora-regular !important;
+        font-size: 24px;
+        margin: auto;
+        margin-bottom: 50px;
+        max-width: 504px;
+      }
+      
+      &-small {
+        p {
+          max-width: 498px;
+          margin-bottom: 50px;
+        }
+      }
+      
+      .btn__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

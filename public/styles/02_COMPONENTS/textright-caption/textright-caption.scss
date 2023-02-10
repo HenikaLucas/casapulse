@@ -1,0 +1,27 @@
+.textright-caption{
+    display: flex;
+    max-width: 1366px;
+    padding-right: 0;
+    @include breakpoint(desktop){
+        position: relative;
+        left: 48.7%;
+        padding-top: 0px !important;
+        margin-top: 0;
+    }
+    &__container{
+        display: flex;
+        @include breakpoint(mobile){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .caption{
+            font-family: $sora-regular !important;
+            font-size: 16px;
+            max-width: 535px;
+            .caption-paragraph{
+                padding-top: 10px;
+            }
+        }
+    }
+}

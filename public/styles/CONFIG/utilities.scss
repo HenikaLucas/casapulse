@@ -1,0 +1,91 @@
+.font-family-primary {
+    font-family: $cp-font-family-primary !important;
+}
+
+.font-family-secondary {
+    font-family: $cp-font-family-secondary !important;
+}
+
+.accent-color {
+    color: $cp-accent-color !important;
+}
+
+.accent-secondary-color {
+    color: $cp-accent-secondary-color !important;
+}
+
+.accent-tertiary-color {
+    color: $cp-accent-tertiary-color !important;
+}
+
+.dark-shade-0-color {
+    color: $cp-dark-shade-0-color !important;
+}
+.dark-shade-1-color {
+    color: $cp-dark-shade-1-color !important;
+}
+.dark-shade-2-color {
+    color: $cp-dark-shade-2-color !important;
+}
+.dark-shade-3-color {
+    color: $cp-dark-shade-3-color !important;
+}
+.dark-shade-4-color {
+    color: $cp-dark-shade-4-color !important;
+}
+.dark-shade-5-color {
+    color: $cp-dark-shade-5-color !important;
+}
+.dark-shade-6-color {
+    color: $cp-dark-shade-6-color !important;
+}
+.dark-shade-7-color {
+    color: $cp-dark-shade-7-color !important;
+}
+.dark-shade-8-color {
+    color: $cp-dark-shade-8-color !important;
+}
+
+.dark-shade-0-bg-color {
+    background-color: $cp-dark-shade-0-color !important;
+}
+.dark-shade-1-bg-color {
+    background-color: $cp-dark-shade-1-color !important;
+}
+.dark-shade-2-bg-color {
+    background-color: $cp-dark-shade-2-color !important;
+}
+.dark-shade-3-bg-color {
+    background-color: $cp-dark-shade-3-color !important;
+}
+.dark-shade-4-bg-color {
+    background-color: $cp-dark-shade-4-color !important;
+}
+.dark-shade-5-bg-color {
+    background-color: $cp-dark-shade-5-color !important;
+}
+.dark-shade-6-bg-color {
+    background-color: $cp-dark-shade-6-color !important;
+}
+.dark-shade-7-bg-color {
+    background-color: $cp-dark-shade-7-color !important;
+}
+.dark-shade-8-bg-color {
+    background-color: $cp-dark-shade-8-color !important;
+}
+
+.border-accent-color {
+    border-color: $cp-accent-color !important;
+}
+
+.fs-7 {
+    font-size: 0.85em !important;
+}
+
+.highlight-accent-secondary-color {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #bfe1dd 10%);
+}
+
+.highlight-accent-tertiary-color {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, $cp-accent-tertiary-color 10%);
+}

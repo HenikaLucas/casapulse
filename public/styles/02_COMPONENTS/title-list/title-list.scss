@@ -1,0 +1,21 @@
+.titlelist{
+    font-family: $sora-semibold;
+
+    .title-sentence{
+        line-height: normal;
+    }
+}
+
+@media (min-width: 992px) {
+    .titlelist{
+        font-size: 30px;
+        margin: 100px 0 60px 0;
+    }
+}
+
+@media (max-width: 991px){
+    .titlelist{
+        font-size: 24px;
+        margin: 70px 0 40px 0;
+    }
+}

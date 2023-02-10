@@ -1,0 +1,41 @@
+@import "./estimation-section.scss";
+
+.card-section {
+  background-color: $cp-colonial-white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include breakpoint(mobile) {
+    padding-top: 20px;
+  }
+  .section-container {
+    background-color: $cp-colonial-white;
+    padding-left: 139px;
+    padding-right: 139px;
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(desktop) {
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+      margin-bottom: 100px;
+    }
+    .cardImage {
+      @include breakpoint(mobile) {
+        margin-top: 30px;
+      }
+      &__top {
+        &__image {
+          &.mini {
+            margin-bottom: 50px;
+          }
+        }
+      }
+      &.mini {
+        height: 478px;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.solution-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $cp-firefly;
+    padding-top: 100px;
+
+    @include breakpoint(small) {
+        padding-top: 20px;
+    }
+  
+    .section-container {
+      background-color: $cp-firefly;
+      max-width: 1366px;
+
+      .solution{
+
+        .cards{
+          @include breakpoint(mobile){
+            margin: 0  50px;
+          }
+        }
+      }
+    }
+  }
+  

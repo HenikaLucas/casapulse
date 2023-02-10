@@ -1,0 +1,39 @@
+.custom-button {
+  font-family: $sora-regular;
+  font-weight: 500;
+  border: 0;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.custom-button--primary {
+  color: $cp-firefly;
+  background-color: $cp-greenish-cyan;
+}
+.custom-button--secondary {
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+}
+.custom-button--small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.custom-button--medium {
+  font-size: 12px;
+  width: 200px;
+  height: 48px;
+}
+.custom-button--large {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+.custom-button__full {
+  width: auto !important;
+  padding: 15px 50px;
+  font-weight: bold;
+}

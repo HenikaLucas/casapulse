@@ -1,0 +1,96 @@
+.product {
+    &__container {
+        background-color: $cp-firefly;
+    }
+
+    &-section {
+        background-color: $cp-colonial-white;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        padding-bottom: 150px;
+        border-radius: 0 0 150px 0;
+        
+        @include breakpoint(mobile) {
+            padding-bottom: 80px;
+            border-radius: 0 0 30px 0;
+        }
+
+        &__title {
+            margin-top: 100px;
+            margin-left: 226px;
+            font-size: 64px;
+            line-height: 72px;
+            
+            @include breakpoint(mobile) {
+                margin-top: 30px;
+                margin-left: 30px;
+                font-size: 40px;
+                line-height: normal;
+            }
+            
+            @include breakpoint(small) {
+                padding-left: 5%;
+                font-size: 35px;
+                max-width: 200px;
+            }
+        }
+
+        &__list {
+            margin-top: 45px;
+            background-image: url('/images/home/product-illustration.svg');
+            background-size: 36%;
+            background-repeat: no-repeat;
+            background-position: left top;
+
+            @include breakpoint(mobile) {
+                margin-top: 0;
+                background-image: none;
+            }
+            
+            &__cards {
+                margin-top: 4%;
+                margin-left: 30%;
+
+                &-bottom {
+                    margin-top: -60px;
+
+                    @include breakpoint(mobile) {
+                        margin-top: -40px;
+                    }
+
+                    @include breakpoint(small) {
+                        margin-top: 40px;
+                    }
+                }
+
+                @include breakpoint(mobile) {
+                    margin-top: 0;
+                    margin-left: 3%;
+                }
+
+                @include breakpoint(small) {
+                    margin-left: 0;
+                    padding: 0 10%;
+                }
+            }
+        }
+
+        &__image {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+            margin-top: 30px;
+
+            img {
+                width: 75%;
+                max-width: 400px;
+                margin-left: -7%;
+            }
+
+            @include breakpoint(desktop) {
+                display: none;
+            }
+        }
+    }
+}

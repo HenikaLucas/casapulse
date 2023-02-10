@@ -1,0 +1,74 @@
+.confiance-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .section-container {
+      max-width: 100%;
+
+      .titre{
+        display: flex;
+        justify-content: center;
+        margin-top: 65px;
+
+        @include breakpoint(mobile) {
+          margin-top: 20px;
+        }
+        
+        h5{
+          color: $cp-firefly;
+          font-size: 24px;
+          font-weight: bold;
+
+          @include breakpoint(mobile) {
+            text-align: center;
+          }
+        }
+      }
+
+    .confiance-elements {
+        display: flex;
+        overflow-x: scroll;
+        padding-left: 2rem;
+
+        @include breakpoint(small) {
+          padding-left: 3.5rem;
+        }
+        @include breakpoint(desktop) {
+            padding-left: 6rem;
+            margin-top: 20px;
+            margin-bottom: 135px;
+        }
+        .confiance {
+          color: $cp-firefly;
+          text-align: center;
+          margin: 25px 30px 20px 30px;
+          @include breakpoint(desktop) {
+            margin-left: 50px;
+            margin-right: 50px;
+          }
+  
+          &__row {
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+            flex-direction: row;
+
+            @include breakpoint(small) {
+              margin-top: 10px;
+            }
+
+            .confiance{
+              & > img{
+                @include breakpoint(small) {
+                  height: 40px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

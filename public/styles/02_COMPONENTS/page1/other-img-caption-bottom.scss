@@ -1,0 +1,46 @@
+.bottom-other-img-caption {
+  &.light {
+    color: #fff;
+  }
+  margin-bottom: 50px;
+  @include breakpoint(desktop) {
+    margin-bottom: 150px;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .caption {
+      margin-bottom: 30px;
+      .titre {
+        max-width: 578px;
+        font-family: $sora-regular !important;
+        font-size: 30px;
+        margin-bottom: 35px;
+      }
+      .paragraphs {
+        max-width: 536px;
+        font-family: $sora-regular !important;
+        font-size: 16px;
+      }
+    }
+
+    .image {
+      @include breakpoint(mobile) {
+        width: 100%;
+      }
+      img {
+        @include breakpoint(mobile) {
+          width: 100%;
+        }
+        @include breakpoint(desktop) {
+          position: relative;
+          left: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.other-img-caption {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .caption {
+      .titre {
+        font-family: $sora-regular !important;
+        font-size: 30px;
+        max-width: 656px;
+        margin-bottom: 36px;
+      }
+
+      .paragraphs {
+        font-family: $sora-regular !important;
+        font-size: 16px;
+        max-width: 536px;
+      }
+    }
+    .image {
+        img{
+            width: 100%;
+        }
+      @include breakpoint(desktop) {
+        position: relative;
+        top: 550px;
+      }
+      &.page-2{
+        @include breakpoint(desktop) {
+          position: relative;
+          top: 350px;
+        }
+      }
+    }
+  }
+}

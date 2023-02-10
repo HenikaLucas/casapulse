@@ -1,0 +1,78 @@
+.blog-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 1100px;
+    margin: auto;
+    align-items: center;
+    
+    @media only screen and (max-width: 1142px) and (min-width: 992px) {
+        max-width: 731px;  
+    }
+    @media only screen  and (max-width: 775px) {
+        justify-content: center;  
+    }
+    @include breakpoint(mobile){
+        max-width: 731px;
+    }
+
+    .item {
+        .solutionCard {
+            margin: 0;
+            margin-bottom: 30px;
+
+            &__content__text{
+                @include breakpoint(small){
+                    margin-top:11px;
+                }
+            }
+        }
+    }
+    
+}
+
+.blog-section {
+    padding: 200px 20px;
+    background-color: $cp-colonial-white;
+    @include breakpoint(small){
+        padding: 70px 20px;
+    }
+}
+
+.contentful-element {
+    display: flex;
+
+    .contentful-left {
+        width: 50%;
+        padding-top: 100px;
+    }
+    .contentful-right {
+        width: 50%;
+
+        h6 {
+            width: 420px;
+            margin-bottom: 50px;
+        }
+
+        a {
+            color: $cp-firefly;
+        }
+
+        button {
+            margin-top: 50px;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        flex-direction: column;
+
+        .contentful-left {
+            width: 100%;
+            padding-top: 50px;
+        }
+
+        .contentful-right {
+            width: 100%;
+        }
+    }
+}

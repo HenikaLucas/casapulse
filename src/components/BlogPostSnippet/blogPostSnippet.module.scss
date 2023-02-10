@@ -1,0 +1,49 @@
+
+.card {
+    height:100%;
+}
+.cardHeader{
+    background-color: #FFF;
+}
+.cardImg {
+    width:60%;
+}
+.cardTitle {
+    font-size:1.3em;
+    font-weight: bold;
+}
+.cardDescription {
+    font-size:0.9em;
+    margin-top:15px;
+}
+
+.cardTitleLink, .cardTitleLink:visited {
+    text-decoration: none;
+    color:#000
+
+}
+
+.cardTitleLink:hover {
+    text-decoration: underline;
+    color: #FFD166
+}
+
+.cardDate {
+    font-size:0.8em;
+    color: #999;
+}
+
+.cardButton {
+    font-size:0.8em;
+}
+
+.cardButton:visited {
+    color:black;
+}
+
+.cardButton:hover {
+    color:white;
+}
+
+
+

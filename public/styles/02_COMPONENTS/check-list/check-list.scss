@@ -1,0 +1,20 @@
+.list {
+    color: $cp-bianca;
+    width: fit-content;
+
+    &__dark{
+        color: $cp-firefly;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin: 19px 0;
+
+    }
+    
+    &__text {
+        margin-left: 19px;
+        font-size: 16px;
+    }
+}

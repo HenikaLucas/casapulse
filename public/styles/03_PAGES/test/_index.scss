@@ -1,0 +1,11 @@
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $cp-firefly;
+
+  .section-container {
+    background-color: $cp-firefly;
+    max-width: 1366px;
+  }
+}

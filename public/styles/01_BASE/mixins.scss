@@ -1,0 +1,15 @@
+//Responsive
+@mixin breakpoint($point) {
+	@if $point == small {
+		@media (max-width: $breakpoint-small) { @content; }
+	}
+	@if $point == medium {
+		@media (max-width: $breakpoint-medium) { @content; }
+	}
+	@if $point == mobile {
+		@media (max-width: $breakpoint-mobile) { @content; }
+	}
+	@else if $point == desktop {
+		@media (min-width: $breakpoint-desktop) { @content; }
+	}
+}

@@ -1,0 +1,30 @@
+.image-text{
+    display: flex;
+    padding-left: 139px;
+    font-size: 16px;
+    color: $cp-bianca;
+    
+    p {
+        color: $cp-bianca;
+    }
+    
+    &__right {
+        margin-right: 80px;
+        margin-left: 8%;
+        margin-top: 107px;
+        width: 520px;
+    }
+    
+    @include breakpoint(mobile) {
+        padding-left: 10.1%;
+
+        &__left {
+            display: none;
+        }
+        
+        &__right {
+            margin-top: 20px;
+            margin-left: 0;
+        }
+    }
+}

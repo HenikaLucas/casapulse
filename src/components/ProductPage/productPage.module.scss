@@ -1,0 +1,70 @@
+.section {
+    margin-bottom:50px;
+    padding-bottom:50px;
+}
+
+.topSection {
+    margin-top:-100px;
+    padding-top:100px;
+}
+
+.shapeDividerTop {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.shapeDividerTop svg {
+    position: relative;
+    display: block;
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.shapeDividerBottom {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.shapeDividerBottom svg, .shapeDividerTop svg {
+    position: relative;
+    display: block;
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.shapeDividerSVGBase {
+    width: calc(130% + 1.3px);
+}
+
+.shapeDividerSVGOverlay {
+    width: calc(160% + 1.3px);
+}
+
+
+.shapeFill {
+    fill: #FFF;
+}
+
+
+.shapeDividerBottomContainer {
+    padding-bottom: 150px;
+    position:relative;
+}
+
+.shapeDividerTopContainer {
+    padding-top: 150px;
+    position:relative;
+}
+
+.darkBg {
+    background-color: #EFF1F3;
+}

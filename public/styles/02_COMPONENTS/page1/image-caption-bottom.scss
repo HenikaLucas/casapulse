@@ -1,0 +1,40 @@
+.bottom-img-caption {
+  margin-bottom: 50px;
+  @include breakpoint(desktop) {
+    margin-bottom: 155px;
+  }
+  &__container {
+    .titre {
+      max-width: 578px;
+      font-family: $sora-regular !important;
+      font-size: 30px;
+      @include breakpoint(desktop) {
+        margin-bottom: 64px;
+      }
+    }
+    .img-and-caption {
+      display: flex;
+      flex-direction: column;
+      @include breakpoint(desktop) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .image {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        img {
+          width: 100%;
+        }
+      }
+      .caption {
+        max-width: 536px;
+        font-size: 16px;
+        font-family: $sora-regular !important;
+        @include breakpoint(desktop) {
+          position: relative;
+          left: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,162 @@
+.big-card {
+    display: flex;
+    padding: 23px;
+    border-radius: 30px 0 0 30px;
+    margin: 10px 0;
+
+    @include breakpoint(medium) {
+        position: relative;
+    }
+
+    &__dark{
+        background-color: $cp-firefly;
+        padding-bottom: 100px;
+        
+        p {
+            color: $cp-bianca;
+        }
+
+        @include breakpoint(mobile) {
+            border-radius: 30px 0 0 0;
+        }
+        
+        @include breakpoint(medium) {
+            padding-bottom: 35px;
+        }
+    }
+    
+    &__light{
+        background-color: $cp-bianca;
+        color: $cp-firefly;
+    }
+
+    &__title{
+        color: $cp-greenish-cyan;
+        font-size: 36px;
+        display: flex;
+        width: 90%;
+        border-bottom: 1px solid $cp-greenish-cyan;
+        padding-bottom: 16px;
+        
+        @include breakpoint(medium) {
+            font-size: 27px;
+        }
+
+        &__text {
+            padding-left: 50px;
+
+            @include breakpoint(medium) {
+                padding-left: 30px;
+            }
+
+            @include breakpoint(small) {
+                padding-left: 0;
+            }
+        }
+
+        &__number {
+            @include breakpoint(small) {
+                display: none;
+            }
+        }
+    }
+
+    &__body {
+        display: flex;
+        padding: 66px 69px;
+
+        span {
+            font-weight: bold;
+        }
+
+        @include breakpoint(mobile) {
+            padding: 30px;
+        }
+
+        @include breakpoint(medium) {
+            padding: 20px;
+            display: block;
+            padding-bottom: 100px;
+        }
+
+        @include breakpoint(small) {
+            margin-top: 30px;
+            padding: 0;
+        }
+
+        &__left {
+            font-size: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 20px;
+
+            @include breakpoint(medium) {
+                font-size: 20px;
+            }
+
+            @include breakpoint(small) {
+                margin-bottom: 30px;
+            }
+
+            p {
+                margin-bottom: 40px;
+
+                @include breakpoint(medium) {
+                    margin-bottom: 0;
+                }
+
+                @include breakpoint(small) {
+                    font-size: 18px;
+                }
+            }
+
+            &__button {
+                @include breakpoint(medium) {
+                    position: absolute;
+                    bottom: 60px;
+                }
+                @include breakpoint(small) {
+                    width: 77%;
+                    
+                    button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        &__right {
+            font-size: 16px;
+
+            @include breakpoint(medium) {
+                font-size: 14px;
+            }
+
+            p {
+                @include breakpoint(small) {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        &__left, &__right {
+            padding: 10px;
+            width: 50%;
+
+            @include breakpoint(medium) {
+                width: 100%;
+            }
+
+            @include breakpoint(small) {
+                padding: 0;
+            }
+        }
+    }
+
+    @include breakpoint(small) {
+        padding: 35px 35px 140px 40px;
+        border-radius: 30px;
+    }
+
+}

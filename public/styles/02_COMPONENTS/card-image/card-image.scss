@@ -1,0 +1,235 @@
+.cardImage {
+    width: 444px;
+    height: 631px;
+    background-color: $cp-white;
+    border-radius: 10px 10px 0 0;
+    padding-right: 35px;
+    padding-top: 30px;
+
+    
+    @include breakpoint(mobile) {
+        width: 380px;
+        height: 540px;
+        padding-right: 30px;
+    }
+
+    @include breakpoint(small) {
+        width: 300px;
+    }
+
+    p {
+        padding-left: 45px;
+        padding-right: 1px;
+    }
+
+    &__medium {
+        p {
+            width: 75%;
+        }
+    }
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        font-style: $sora-bold;
+        font-weight: bold;
+        font-size: 24px;
+        color: $cp-greenish-cyan;
+        
+        &__image {
+            height: 265px;
+        }
+        
+        p {
+            width: 143px;
+            color: $cp-greenish-cyan;
+        }
+
+        @include breakpoint(mobile) {
+            font-size: 20px;
+
+            &__image {
+                height: 200px;
+            }
+        }
+    
+    }
+    
+    &__largeTitle {
+        p {
+            width: 329px;
+        }
+    }
+
+    &__smallDesc {
+        .cardImage__bottom {
+            p {
+                width: 327px;
+            }
+
+            
+            @include breakpoint(mobile) {
+                p {
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    @include breakpoint(mobile) {
+        p {
+            width: auto;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+    
+    &__small {
+        padding-left: 38px;
+        padding-right: 28px;
+        width: 352px;
+        height: 542px;
+        padding-top: 40px;
+        
+        @include breakpoint(mobile) {
+            width: 300px;
+            padding-bottom: 30px;
+            height: 574px;
+        }
+        
+        img {
+            margin-bottom: 30px;
+            margin-left: -12px;
+            width: auto;
+        }
+        
+        p {
+            padding-left: 0px;
+        }
+
+        .cardImage{
+            &__top {
+                &__image {
+                    height: 100px;
+                }
+                
+                &__bigImage {
+                    height: 245px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            
+                &__title {
+                    p {
+                        width: 300px;
+
+                        @include breakpoint(mobile) {
+                            width: 200px;
+                        }
+                    }
+                }
+            }
+            
+            &__bottom {
+                p {
+                    width: 300px;
+
+                    @include breakpoint(mobile) {
+                        width: 200px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    &__bottom {
+        font-style: $sora-regular;
+        font-size: 16px;
+        color: $cp-firefly;
+
+        @include breakpoint(mobile) {
+            font-size: 14px;
+        }
+    }
+
+    &__horizontal {
+        width: 996px;
+        height: 265px;
+        padding-left: 44px;
+        background-color: $cp-white-transparent;
+        border-radius: 10px;
+        padding-top: 30px;
+
+        @include breakpoint(mobile) {
+            width: 80%;
+            height: auto;
+            padding-bottom: 30px;
+        }
+
+        .cardImage {
+            &__top {
+                flex-direction: row;
+                margin-left: -15px;
+
+                &__image {
+                    height: 80px;
+                    width: 90px;
+                }
+
+                &__title {
+                    display: flex;
+                    align-items: flex-end;
+                    margin-left: 20px;
+                }
+
+                img {
+                    margin: 0;
+                    margin-top: -18px;
+                    margin-left: -10px;
+                }
+
+                p {
+                    width: 520px;
+                    margin: 0;
+                    color: $cp-greenish-cyan;
+                }
+            }
+
+            &__bottom {
+                margin-top: 20px;
+                p {
+                    width: 590px;
+                }
+                
+                &-small {
+                    p {
+                        width: 500px;
+                    }
+                }
+            }
+
+            @include breakpoint(mobile) {
+                &__top {
+                    &__image {
+                        display: none;
+                    }
+
+                    p {
+                        width: 85%;
+                    }
+                }
+
+                &__bottom {
+                    p {
+                        width: 85%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+
+
+.mainContent {
+    font-size: 15px !important;
+}
+
+.mainContent h2 {
+    font-weight: 600;
+}
+
+.mainContent h3 {
+    color: #2A9D8F;
+}
+
+.tableOfContent {
+    align-self: flex-start;
+    top: 100px;
+}
+
+.mainContent table th {
+    font-weight: 600;
+}
+
+.mainContent table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    display: block;
+    width: max-content;
+    max-width: 100%;
+    overflow: auto;
+    font-size: 90%;
+}
+
+.mainContent table th,
+.mainContent table td {
+    padding: 6px 13px;
+    border: 1px solid hsla(210, 18%, 87%, 1);
+}
+
+.mainContent table td p {
+    display: initial;
+    margin-block-start: initial;
+    margin-block-end: initial;
+    margin-inline-start: initial;
+    margin-inline-end: initial;
+}
+
+.mainContent table tr {
+    border-top: 1px solid hsla(210, 18%, 87%, 1);
+}
+
+.mainContent table img {
+    background-color: transparent;
+}
+
+.mainContent *:not(pre)>code {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(175, 184, 193, 0.2);
+    border-radius: 6px;
+    color: inherit;
+}

@@ -1,0 +1,24 @@
+.image-caption{
+    margin-bottom: 100px;
+    &__container{
+        display: flex;
+        @include breakpoint(mobile){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .caption{
+            font-family: $sora-regular !important;
+            font-size: 36px;
+            max-width: 628px;
+            margin-top: 50px;
+            @include breakpoint(desktop){
+                position: relative;
+                left: 15%;
+                top: 200px;
+                margin-top: 0;
+                margin-bottom: 100px;
+            }
+        }
+    }
+}

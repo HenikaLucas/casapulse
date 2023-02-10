@@ -1,0 +1,79 @@
+.immo__container {
+    background-color: $cp-bianca;
+    padding-top: 70px;
+    margin-bottom: -50px;
+    padding-left: 4%;
+
+    @include breakpoint(mobile){
+        padding-top: 30px;
+    }
+
+}
+
+.bloc-droite{
+    margin-bottom: 5rem;
+
+    @include breakpoint(mobile){
+       width: 80%;
+    }
+}
+
+.text-center{
+    @include breakpoint(mobile){
+       width: 30%;
+
+       img {
+            width: 100%;
+       }
+    }
+
+    @include breakpoint(small){
+        max-width: 300px;
+        width: 90%;
+        content: url(/images/home/immobilier-home-mobile.png);
+        margin: auto auto 20px 12px;
+    }
+}
+
+.title {
+    margin-top: 0px;
+    font-size: 64px;
+    line-height: 4.4rem;
+
+    @include breakpoint(mobile){
+        font-size: 30px;
+        line-height: normal;
+    }
+}
+
+.contenu{
+    margin-top: 21.5px;
+    font-size: 24px;
+    font-weight: 100;
+    max-width: 500px;
+
+    @include breakpoint(mobile){
+        font-size: 14px;
+        max-width: 280px;
+    }
+}
+
+.sign-up{
+    background: $cp-sign-up-button-color;
+    color: $cp-dark-shade-0-color!important;
+    font-family: $sora-regular !important;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 17px 50px 16px 40px;
+    width: 270px;
+
+    @include breakpoint(small) {
+        width: 100%;
+        min-width: 230px;
+        padding: 17px 20px 16px 20px;
+    }
+}
+
+.sign-up:hover{
+    background: $cp-hover-sign-up-button-color;
+}

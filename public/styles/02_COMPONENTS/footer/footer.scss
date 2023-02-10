@@ -1,0 +1,61 @@
+.footer {
+    background-color: $cp-firefly;
+    background-image: url(/images/footer/pattern.svg);
+    color: $cp-greenish-cyan;
+    font-size: 12px;
+    padding: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__brand {
+        img {
+            margin-left: -15px;
+        }
+
+        &__text {
+            color: $cp-bianca;
+        }
+
+        @include breakpoint(mobile) {
+            margin-bottom: 30px;
+            padding-left: 9px!important;
+        }
+    }
+
+    &-container{
+        @include breakpoint(desktop){
+            max-width: 1366px !important;
+        }
+    }
+
+    &__title {
+        font-size: 12px !important;
+        padding-left: 12px;
+    }
+    &-link{
+        margin-bottom: 5px !important;
+    }
+    &-element{
+        padding-left: 0.5rem !important;
+        @include breakpoint(desktop){
+            width: 16% !important;
+        }
+        &.mini{
+            width: 10% !important;
+            @include breakpoint(mobile){
+                position: relative;
+                right: 45%;
+            }
+        }
+    }
+}
+
+.footer a {
+    text-decoration: none;
+    color: $cp-bianca;
+    font-size: 14px;
+}
+
+.footer a:hover {
+    font-weight: 500;
+}

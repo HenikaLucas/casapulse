@@ -1,0 +1,22 @@
+$font-location: '../../fonts/Sora/';
+
+@font-face{
+    font-family: 'Sora Regular';
+    src:   url($font-location + '/ttf/Sora-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Sora Bold';
+    src:   url($font-location + '/ttf/Sora-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Sora Light';
+    src:   url($font-location + '/ttf/Sora-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

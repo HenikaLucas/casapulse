@@ -1,0 +1,18 @@
+.page1-header {
+  display: flex;
+  @include breakpoint(mobile) {
+    justify-content: center;
+    align-items: center;
+  }
+  background-color: $cp-firefly;
+  padding-top: 100px;
+
+  @include breakpoint(small) {
+    padding-top: 20px;
+  }
+
+  .section-container {
+    background-color: $cp-firefly;
+    max-width: 1366px;
+  }
+}

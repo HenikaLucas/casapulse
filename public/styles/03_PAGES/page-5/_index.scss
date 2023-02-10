@@ -1,0 +1,22 @@
+@media (min-width: 992px) {
+    .content{
+        margin-left: 10.17%;
+        max-width: 65%;
+    }
+}
+
+@media (max-width: 991px) {
+    .content{
+        margin: 0 10px 0 10px;
+    }
+}
+
+.btn__container{
+    margin: 55px 0 155px 50px;
+
+    .custom-button{
+        width: 250px;
+        padding: 0 20px 0 20px;
+        font-family: $sora-regular;
+    }
+}

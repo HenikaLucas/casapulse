@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2000 935" xml:space="preserve">
+    <g class="animate-bubble-up">
+        <circle fill="#DFDFDB" cx="128.5" cy="446" r="11.5" />
+        <circle fill="#4F4BFC" cx="1151" cy="367.5" r="33" />
+        <circle fill="#EFF1F3" cx="1151.61" cy="368.11" r="29.94" />
+        <circle fill="#4F4BFC" cx="1615" cy="600" r="17" />
+        <circle fill="#EFF1F3" cx="1615.31" cy="600" r="15.43" />
+        <circle fill="#DFDFDB" cx="635.5" cy="519" r="6.5" />
+        <circle fill="#DFDFDB" cx="647.5" cy="150" r="10.5" />
+        <circle fill="#0088CC" cx="1638" cy="100" r="23" />
+        <circle fill="#EFF1F3" cx="1638.43" cy="100.3" r="20.87" />
+    </g>
+    <g class="animate-bubble-down">
+        <circle fill="#0088CC" cx="857" cy="644.5" r="17" />
+        <circle fill="#EFF1F3" cx="857.31" cy="644.81" r="15.43" />
+        <circle fill="#DFDFDB" cx="958.5" cy="427" r="10.5" />
+        <circle fill="#908DFA" cx="1576" cy="550" r="14" />
+        <circle fill="#908DFA" cx="1139" cy="216.5" r="8" />
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+.authorContainer {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.authorDetailsContainer{
+    display: flex;
+    flex-direction: column;
+}
+.authorFirstLine {
+    font-weight:bold;
+    font-size: 23px;
+    height: 23px;
+    margin-top: 15px;
+    color: #052C39;
+}
+
+.authorSecondLine {
+    font-size: 0.9em;
+    color: #052C39;
+
+}

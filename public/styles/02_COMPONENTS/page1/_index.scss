@@ -1,0 +1,37 @@
+@import "./page1-header.scss";
+@import "./image-caption-top.scss";
+@import "./other-img-caption-top.scss";
+@import "./image-caption-bottom.scss";
+@import "./other-img-caption-bottom.scss";
+@import "./footer-section.scss";
+
+.main-section {
+  background-color: $cp-light-mustard;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include breakpoint(mobile) {
+    padding-top: 20px;
+  }
+
+  .section-container {
+    background-color: $cp-light-mustard;
+    max-width: 1366px;
+    padding-left: 139px;
+    padding-right: 139px;
+    hr {
+      @include breakpoint(desktop) {
+        margin-top: 130px;
+        margin-bottom: 50px;
+      }
+      max-width: 966px;
+    }
+    &__section-break{
+      @include breakpoint(desktop)
+      {
+        margin-bottom: 100px;
+      }
+    }
+  }
+}

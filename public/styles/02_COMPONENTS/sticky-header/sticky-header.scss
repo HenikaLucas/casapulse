@@ -1,0 +1,171 @@
+.navbarBrand{
+    margin-left: -15px;
+
+    @include breakpoint(mobile){
+        margin-left: 0;
+    }
+
+    @include breakpoint(small){
+        margin-left: 10px;
+    }
+}
+
+.signinLink, .registerLink {
+    border-radius:5px;
+    text-align:center;
+    font-size: 0.9em;
+    width: 140px;
+    padding: 8px;
+}
+
+.signinLink {
+    color:#000 !important;
+    border: 2px solid #000;
+    background-color: transparent;
+    margin-right:10px;
+}
+
+.signinLink:hover {
+    color:#555 !important;
+}
+
+.registerLink {
+    border: 1px solid $cp-sign-up-button-color;
+    color:$cp-dark-shade-0-color !important;
+    background-color:$cp-sign-up-button-color;
+}
+
+.registerLink:hover {
+    background-color: $cp-hover-sign-up-button-color;
+    border: 1px solid $cp-hover-sign-up-button-color;
+}
+
+.stickyHeader{
+    position: fixed;
+    top:0;
+    height:100px;
+    width:100%;
+    transition:height .2s;
+    z-index:99;
+    background-color: $cp-bianca;
+
+    .navbar-nav {
+        a {
+            color: #0000008c !important;
+            text-decoration: none;
+            padding: 8px;
+            white-space: nowrap;
+            display: block;
+        }
+    }
+}
+
+.stickyHeaderHidden{
+    box-shadow: 0 0 3px #04040429;
+    height:70px;
+    z-index: 9999;
+}
+
+.ghostHeader{
+    margin-bottom:100px;
+}
+@media screen and (min-width: 992px) { 
+    .responsiveNavBar{
+        margin-right: 70px;
+    }
+}
+
+@media screen and (max-width: 991px) {    
+    .responsiveNavBar{
+        padding: 20px;
+        background-color: $cp-bianca;
+        height: 100vh;
+        margin-left: -15%;
+        margin-right: -15%;
+        transition:height .2s;
+        padding-top: 15vh;
+        padding-left: 25%;
+    }
+}
+
+.navbarToggleButton:focus {
+    box-shadow:none;
+}
+
+.navbarToggleButton {
+    background-color: $cp-bianca;
+}
+
+.menu{
+    margin-left: 1.7rem!important;
+}
+
+@media screen and (max-width: 991px) {    
+    .menu{
+        width: 70%;
+    }
+}
+
+.contact{
+    width: 150px!important;
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .menu, .space-menu{
+        margin-left: 0.1rem!important;
+    }
+
+    .signinLink {
+        width: 131px!important;
+    }
+
+    .registerLink {
+        width: 115px!important;
+    }
+}
+
+@media (min-width: 1200px){
+    .space-menu{
+        margin-left: 3rem!important;
+    }
+}
+
+@media screen and (max-width: 991px) {  
+    .space-menu{
+        padding-left: 9%;
+        margin-top: 30px;
+        width: 75%;
+
+        .signinLink, .registerLink {
+            width: 100%;
+            padding: 16px;
+            border-radius: 14px;
+        }
+    }  
+}
+
+.stickyHeader__dark {
+    .signinLink {
+        border: 2px solid $cp-light-mustard;
+        color: $cp-light-mustard !important;
+    }
+
+    .navbar-nav {
+        a {
+            color: $cp-light-mustard !important;
+            display: block;
+        }
+
+        .registerLink {
+            color: $cp-firefly !important;
+        }
+    }
+
+    .dropdown-menu {
+        background-color: $cp-bianca;
+
+        a {
+            color: $cp-firefly !important;
+        }
+    }
+}

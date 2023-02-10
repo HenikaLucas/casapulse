@@ -1,0 +1,13 @@
+.outil-section {
+    background-color: $cp-firefly;
+
+    &__container {
+        padding-top: 70px;
+        max-width: 1366px;
+        margin: auto;
+        
+        @include breakpoint(mobile) {
+            padding-top: 30px;
+        }
+    }
+}
