@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
 import Image from 'react-bootstrap/Image';
-import Layout from '../Layout/layout';
+import Layout from '../Layout/Layout';
 import PlanTable from '../PlanTable/planTable';
 import ProductFeatureCard from '../ProductFeatureCard/productFeatureCard';
 import Container from 'react-bootstrap/Container';
