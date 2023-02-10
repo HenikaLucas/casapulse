@@ -53,4 +53,4 @@ const pages = [
     }
   ]
   
-  export default pages
+  module.exports = pages;
