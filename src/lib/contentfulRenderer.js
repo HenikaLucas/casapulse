@@ -5,7 +5,7 @@ import { INLINES, BLOCKS, MARKS } from "@contentful/rich-text-types";
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import FAQ from '../components/Faq/faq';
-import Message from '../components/Message/Message';
+import Message from '../components/Message/message';
 import Link from 'next/link';
 import SyntaxHighlighter from '../components/syntaxHighlighter';
 import config from '../../config';
