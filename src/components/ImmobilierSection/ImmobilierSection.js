@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import config from '../../../config';
 
-export default function immobilierSection({image}) {
+export default function ImmobilierSection({image}) {
     return (
         <>
             <Row className='align-items-center mt-5 immo__container'>
@@ -24,6 +24,6 @@ export default function immobilierSection({image}) {
         )
 }
 
-immobilierSection.propTypes = {
+ImmobilierSection.propTypes = {
     image: PropTypes.string.isRequired,
 };
