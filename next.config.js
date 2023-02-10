@@ -1,5 +1,6 @@
 const withImages = require('next-images');
 var config = require('./config')
+import pages from './pages';
 
 module.exports = withImages({
   images: {
@@ -31,16 +32,10 @@ module.exports = withImages({
       },
     ]
   },
-  exportPathMap: async function () {
-    return {
-      '/': { page: '/' },
-      '/agent' : { page : '/agent'},
-      '/datahub' : { page : '/datahub'},
-      '/contact' : { page : '/contact'},
-      '/hunter' : { page : '/hunter'},
-      '/infos' : { page : '/infos'},
-      '/promoter' : { page : '/promoter'},
-      '/startup' : { page : '/startup'}
-    }
+  exportPathMap: async function() {
+    return pages.reduce((map, page) => {
+      map[page.path] = { page: page.component };
+      return map;
+    }, {});
   },
 });
